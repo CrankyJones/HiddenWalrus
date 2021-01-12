@@ -14,3 +14,17 @@
 #hide-image{
   display:none;
 }
+
+body{
+  text-align: center;
+}
+
+.darktheme {
+  background-color: black;
+  color: greenyellow;
+}
+
+.lighttheme {
+  background-color: white;
+  color:black;
+}
