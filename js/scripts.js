@@ -13,8 +13,21 @@ $(document).ready(function() {
     $("body").removeClass();
     $("body").addClass("darktheme");
   });
+
   $("button#lightmode").click(function() {
     $("body").removeClass();
     $("body").addClass("lighttheme");
+  });
+
+  let clicks = 0;
+  $("#paragraph").click(function() {
+    clicks += 1;
+    if(clicks % 2 === 1) {
+      $("#paragraph").removeClass();
+      $("#paragraph").addClass("highBox");
+    } else {
+      $("#paragraph").removeClass();
+    }
+  
   });
 });
